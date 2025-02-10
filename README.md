@@ -1,1 +1,5 @@
-Networks!
+# Opinion Dynamics
+
+This repo contains the code for our CS 6850 (Networks) project. In this project, we study a variant of the Friedkin-Johnson (FJ) model introduced by Friedkin and Johnson in 1990. In the FJ model, each person is modeled as a node in a weighted, undirected graph. The stronger the connection is between two people, the larger the weight is on their edge. Each person has an internal and an external opinion, both modeled as real numbers between 0 and 1. The internal opinion does not change with time. In contrast, at each time step, the external opinion is updated to be a weighted average of the person's internal opinion and their neighbors' external opinions.
+
+The network structure in the FJ model does not change with time, which isn't an accurate depiction of real-life social networks. In particular, people with different opinions often become alienated or even cut each other off. To model this phenomenon of alienation when people's opinions are too far apart, we consider a model where we decrease the weight between two nodes at each time step in which their expressed opinions are too far apart.
